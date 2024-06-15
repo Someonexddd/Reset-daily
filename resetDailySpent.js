@@ -18,11 +18,9 @@ async function resetDailySpent() {
   }
 }
 
-// Schedule the job to run at midnight every day
-cron.schedule('0 0 * * *', resetDailySpent);
+// Schedule the job to run at midnight every day Tokyo time
+cron.schedule('0 0 * * *', resetDailySpent, {
+  timezone: "Asia/Tokyo"
+});
 
-console.log('Cron job scheduled to reset daily spent every day at midnight.');
-
-// Keep the process alive
-const http = require('http');
-http.createServer().listen(3000);
+console.log('Cron job scheduled to reset daily spent every day at midnight Tokyo time.');

@@ -1,14 +1,16 @@
 {
     "name": "reset-daily-spent",
     "version": "1.0.0",
+    "description": "Reset daily spent field in Supabase table.",
     "main": "resetDailySpent.js",
     "scripts": {
       "start": "node resetDailySpent.js"
     },
     "dependencies": {
-      "@supabase/supabase-js": "^1.0.0",
-      "node-cron": "^3.0.0",
-      "http": "^0.0.1-security"
-    }
+      "@supabase/supabase-js": "^1.26.0",
+      "node-cron": "^3.0.0"
+    },
+    "author": "",
+    "license": "ISC"
   }
   
